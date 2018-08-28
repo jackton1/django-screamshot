@@ -19,8 +19,6 @@ else:
     from django.urls import reverse
 
 from django.core.exceptions import ImproperlyConfigured, ValidationError
-
-
 from django.core.validators import URLValidator
 from io import BytesIO
 from django.template.loader import render_to_string
