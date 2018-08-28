@@ -17,13 +17,14 @@ from io import BytesIO
 from django.template.loader import render_to_string
 from django.conf import settings
 from django import VERSION
+
+from . import app_settings
+
+
 if VERSION >= (2, 0):
     from django.urls import reverse
 else:
     from django.core.urlresolvers import reverse
-
-from . import app_settings
-
 
 logger = logging.getLogger(__name__)
 
